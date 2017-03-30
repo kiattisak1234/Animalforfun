@@ -22,7 +22,7 @@ public class Game extends AppCompatActivity {
     ImageView QuestionImageView;
     MediaPlayer mediaPlayer;
     ImageButton volumnImageButton;
-    int QuestionCount =10;
+    int QuestionCount =10; //จำนวนข้อ
     ArrayList<Integer> qID = new ArrayList<Integer>();
     String answer;
     int score = 0;
@@ -233,12 +233,14 @@ public class Game extends AppCompatActivity {
         }else {
             setQuestion(qID.remove(0));
         }
-        }
+        }// End playsound Method
+
     private void Dialogbox() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("สรุปคะแนน");
         builder.setTitle("คุณได้คะแนน" + score + "คะแนน")
                 .setCancelable(false)
-                .setPositiveButton("Exit", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Exit Game", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                             finish();
@@ -262,7 +264,7 @@ public class Game extends AppCompatActivity {
     public void playSound(View view){
         mediaPlayer.start();
 
-    }// End playsound Method
+    }
     }
 
 //Main Class
