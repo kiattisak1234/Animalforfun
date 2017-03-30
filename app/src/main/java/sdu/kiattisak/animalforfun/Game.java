@@ -237,8 +237,9 @@ public class Game extends AppCompatActivity {
 
     private void Dialogbox() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.drawable.icon);
         builder.setTitle("สรุปคะแนน");
-        builder.setTitle("คุณได้คะแนน" + score + "คะแนน")
+        builder.setTitle("คุณได้" + score + "คะแนน")
                 .setCancelable(false)
                 .setPositiveButton("Exit Game", new DialogInterface.OnClickListener() {
                     @Override
