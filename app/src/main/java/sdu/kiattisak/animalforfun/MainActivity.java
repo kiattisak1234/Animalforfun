@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     nameString = editText.getText().toString().trim();
 
 
-                    Toast.makeText(getApplicationContext(), "Hello,"+nameString, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Hello"+nameString, Toast.LENGTH_SHORT).show();
 
                     Intent startIntent = new Intent(MainActivity.this, Game.class);
                     startActivity(startIntent);
