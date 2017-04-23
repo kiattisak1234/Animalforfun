@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     nameString = editText.getText().toString().trim();
-
-
                     Toast.makeText(getApplicationContext(), "Hello"+nameString, Toast.LENGTH_SHORT).show();
 
                     Intent startIntent = new Intent(MainActivity.this, Game.class);
+                    startIntent.putExtra("name",nameString);
+
                     startActivity(startIntent);
                 }
             }
