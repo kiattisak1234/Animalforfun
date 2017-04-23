@@ -240,7 +240,7 @@ public class Game extends AppCompatActivity {
         builder.setIcon(R.drawable.icon);
         builder.setTitle("สรุปคะแนน");
 
-        builder.setMessage(getIntent().getStringExtra("name")+"ได้คะแนน:"+score+"คะแนน")
+        builder.setMessage(getIntent().getStringExtra("name")+"ได้คะแนน:"+score+"คะแนน")   // โค้ด ผู้เล่นที่ใส่ชื่อ เเล้ว จบเกมจะ มีชื่อที่ผู้เล่น
 
                 .setCancelable(false)
                 .setPositiveButton("Exit Game", new DialogInterface.OnClickListener() {

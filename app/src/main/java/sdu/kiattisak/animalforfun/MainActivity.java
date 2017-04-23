@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Hello"+nameString, Toast.LENGTH_SHORT).show();
 
                     Intent startIntent = new Intent(MainActivity.this, Game.class);
-                    startIntent.putExtra("name",nameString);
+                    startIntent.putExtra("name",nameString);   // โค้ด ผู้เล่นที่ใส่ชื่อ เเล้ว จบเกมจะ มีชื่อที่ผู้เล่น
 
                     startActivity(startIntent);
                 }
